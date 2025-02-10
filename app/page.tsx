@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState, ReactNode } from 'react';
 import { Terminal, Code2, Smartphone, Github, MessageSquare, Sun, Moon } from 'lucide-react';
+import { siDiscord, siX } from 'simple-icons';
 
 const TwitterVideoEmbed: React.FC = () => {
   return (
@@ -78,7 +79,7 @@ const KibitzPage: React.FC = () => {
 
       {/* Hero Section */}
       <header className="bg-card shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
               kibitz
@@ -86,15 +87,15 @@ const KibitzPage: React.FC = () => {
             <p className="mt-3 max-w-md mx-auto text-base text-muted-foreground sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
               Your AI coding intern: Edit local files, make commits, and deploy code - all from your browser or phone.
             </p>
-            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-6">
               <div className="rounded-md">
                 <a href="https://github.com/nick1udwig/kibitz" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90 md:py-4 md:text-lg md:px-10">
                   <Github className="w-5 h-5 mr-2" />
                   View on GitHub
                 </a>
               </div>
-            </div>
-            <div className="mt-8">
+      </div>
+            <div className="mt-6">
               <TwitterVideoEmbed />
             </div>
           </div>
@@ -102,7 +103,7 @@ const KibitzPage: React.FC = () => {
       </header>
 
       {/* Features Section */}
-      <div className="py-12 bg-card">
+      <div className="py-6 bg-card">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-base text-primary font-semibold tracking-wide uppercase">Features</h2>
@@ -179,15 +180,12 @@ const KibitzPage: React.FC = () => {
           <div className="mt-10">
             <ul className="space-y-4">
               <RoadmapItem number="1">
-                Integration with more AI providers including OpenAI, OpenRouter, and DeepSeek
-              </RoadmapItem>
-              <RoadmapItem number="2">
                 Perfecting the &ldquo;closed loop&rdquo; for coding from mobile devices
               </RoadmapItem>
-              <RoadmapItem number="3">
+              <RoadmapItem number="2">
                 Enhanced security through Docker container isolation
               </RoadmapItem>
-              <RoadmapItem number="4">
+              <RoadmapItem number="3">
                 Refactoring to include a proper Kinode process backend for better persistence and expanded features
               </RoadmapItem>
             </ul>
@@ -202,6 +200,18 @@ const KibitzPage: React.FC = () => {
             <a href="https://github.com/nick1udwig/kibitz" className="text-muted-foreground hover:text-primary">
               <span className="sr-only">GitHub</span>
               <Github className="h-6 w-6" />
+            </a>
+            <a href="https://discord.gg/PBXGfSgc" className="text-muted-foreground hover:text-primary">
+              <span className="sr-only">Discord</span>
+              <svg className="h-6 w-6" role="img" viewBox="0 0 24 24" fill="currentColor">
+                <path d={siDiscord.path} />
+              </svg>
+            </a>
+            <a href="https://x.com/nick1udwig" className="text-muted-foreground hover:text-primary">
+              <span className="sr-only">X (Twitter)</span>
+              <svg className="h-6 w-6" role="img" viewBox="0 0 24 24" fill="currentColor">
+                <path d={siX.path} />
+              </svg>
             </a>
           </div>
           <div className="mt-8 text-center">

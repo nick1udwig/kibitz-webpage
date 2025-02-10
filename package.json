@@ -12,7 +12,8 @@
     "lucide-react": "^0.323.0",
     "next": "15.1.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "simple-icons": "^14.6.0"
   },
   "devDependencies": {
     "@types/node": "^20",
