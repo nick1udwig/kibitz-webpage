@@ -3,6 +3,26 @@
 import React, { useEffect, useState, ReactNode } from 'react';
 import { Terminal, Code2, Smartphone, Github, MessageSquare, Sun, Moon } from 'lucide-react';
 
+const TwitterVideoEmbed: React.FC = () => {
+  return (
+    <div className="mx-auto max-w-[280px] relative">
+      <div className="aspect-[9/19.5] bg-black/5 rounded-[2rem] p-3">
+        <video
+          className="w-full h-full rounded-[1.5rem] bg-black"
+          controls
+          poster="https://pbs.twimg.com/ext_tw_video_thumb/1882594204251369472/pu/img/w-iG5tUZz2uGF8yA.jpg"
+        >
+          <source
+            src="https://github.com/user-attachments/assets/3f8df448-1c81-4ff2-8598-c48283a4dc00"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  );
+};
+
 interface FeatureCardProps {
   icon: ReactNode;
   title: string;
@@ -73,6 +93,9 @@ const KibitzPage: React.FC = () => {
                   View on GitHub
                 </a>
               </div>
+            </div>
+            <div className="mt-8">
+              <TwitterVideoEmbed />
             </div>
           </div>
         </div>
