@@ -89,8 +89,9 @@
   body {
     @apply bg-background text-foreground font-['JetBrains_Mono'];
     background-image: radial-gradient(circle at -1% -47%, rgba(71, 0, 0, 0.17) 7%, transparent 58.05%), radial-gradient(circle at 81% 210%, rgba(214, 67, 5, 0.31) 17%, transparent 77.05%);
-    min-width: 100vw;
     min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   a {
