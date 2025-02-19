@@ -127,7 +127,7 @@ const KibitzPage: React.FC = () => {
               <FeatureCard
                 icon={<Smartphone className="h-6 w-6" />}
                 title="Mobile Development"
-                description="Code from anywhere with Kinode integration - control your development environment from your phone or tablet."
+                description="Code from anywhere with Hyperware integration - control your development environment from your phone or tablet."
               />
               <FeatureCard
                 icon={<MessageSquare className="h-6 w-6" />}
@@ -160,7 +160,7 @@ const KibitzPage: React.FC = () => {
                   kibitz is the result of wanting Replit, but designed for daily software engineering work. It combines the power of AI with practical development tools, allowing you to edit local files, make commits, and handle PRs seamlessly.
                 </p>
                 <p>
-                  With Kinode integration, kibitz takes mobile development to the next level. Control your development environment from your phone, make changes, and deploy code &ndash; all while on the go.
+                  With Hyperware integration, kibitz takes mobile development to the next level. Control your development environment from your phone, make changes, and deploy code &ndash; all while on the go.
                 </p>
               </div>
             </div>
@@ -186,7 +186,7 @@ const KibitzPage: React.FC = () => {
                 Enhanced security through Docker container isolation
               </RoadmapItem>
               <RoadmapItem number="3">
-                Refactoring to include a proper Kinode process backend for better persistence and expanded features
+                Refactoring to include a proper Hyperware process backend for better persistence and expanded features
               </RoadmapItem>
             </ul>
           </div>
@@ -201,7 +201,7 @@ const KibitzPage: React.FC = () => {
               <span className="sr-only">GitHub</span>
               <Github className="h-6 w-6" />
             </a>
-            <a href="https://discord.gg/PBXGfSgc" className="text-muted-foreground hover:text-primary">
+            <a href="https://discord.gg/KaPXX7SFTD" className="text-muted-foreground hover:text-primary">
               <span className="sr-only">Discord</span>
               <svg className="h-6 w-6" role="img" viewBox="0 0 24 24" fill="currentColor">
                 <path d={siDiscord.path} />
@@ -216,7 +216,7 @@ const KibitzPage: React.FC = () => {
           </div>
           <div className="mt-8 text-center">
             <p className="text-base text-muted-foreground">
-              Available on the Kinode App Store
+              Available on the Hyperware App Store
             </p>
           </div>
         </div>
